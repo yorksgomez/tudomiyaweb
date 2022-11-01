@@ -1,0 +1,42 @@
+<?php
+
+use App\Http\Controllers\API\DeliveryController;
+use App\Http\Controllers\API\RatingController;
+use App\Http\Controllers\API\RegisterController;
+use App\Http\Controllers\API\ServiceController;
+use App\Http\Controllers\API\TravelController;
+use App\Http\Controllers\API\UserController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
+|
+*/
+
+Route::controller(RegisterController::class)->group(function() {
+    Route::post('register', 'register');
+    Route::post('login', 'login');
+});
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
+
+Route::middleware('auth:sanctum')->group(function() {
+    Route::post('get-current-user', [UserController::class, 'getCurrentUser']);
+    Route::post('update-current-user', [UserController::class, 'updateCurrentUser']);
+
+    Route::post('create-delivery', [DeliveryController::class, 'create']);
+    Route::post('create-travel', [TravelController::class, 'create']);
+
+    Route::post('create-rating', [RatingController::class, 'create']);
+
+    Route::post('get-user-services', [ServiceController::class, 'getUserServices']);
+});
