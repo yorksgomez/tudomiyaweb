@@ -6,10 +6,8 @@ namespace App\Http\Controllers\API;
 use Illuminate\Http\Request;
 use App\Http\Controllers\API\BaseController as BaseController;
 use App\Http\Resources\ServiceResource;
-use App\Http\Resources\TravelResource;
 use App\Models\Service;
 use App\Models\Travel;
-use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 
 class TravelController extends BaseController {

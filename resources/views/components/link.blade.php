@@ -1,0 +1,1 @@
+<a {!! $attributes->merge(['class' => "text-primary aria-disabled:text-gray-400 aria-disabled:pointer-events-none cursor-pointer"]) !!} role="link">{{ $slot }}</a>

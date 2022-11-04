@@ -17,22 +17,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $domi = Domi::create();
         User::create( [
-            'name'=>'domitest',
-            'lastname'=>'domitest',
-            'email'=>'domi@gmail.com',
-            'phone'=>'3187132627',
-            'nit'=>'1000123962',
-            'password'=>'abc12345',
-            'role_type'=>'\App\Models\Domi',
-            'role_id'=>$domi->id
+            'name'=>'administrador',
+            'lastname'=>'tudomiya',
+            'email'=>'administradordomiya@gmail.com',
+            'phone'=>'30000000',
+            'nit'=>'0000000000',
+            'password'=> bcrypt('admdomiya2022*'),
+            'role_type'=>'Admin',
+            'role_id'=>0
         ]);
-        // \App\Models\User::factory(10)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }

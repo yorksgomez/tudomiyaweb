@@ -20,13 +20,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::controller(RegisterController::class)->group(function() {
+Route::controller(RegisterController::class)->middleware(['throttle:registers'])->group(function() {
     Route::post('register', 'register');
     Route::post('login', 'login');
-});
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
 });
 
 Route::middleware('auth:sanctum')->group(function() {

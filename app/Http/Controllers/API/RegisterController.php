@@ -35,7 +35,7 @@ class RegisterController extends BaseController {
 
         $input['password'] = bcrypt($input['password']);
 
-        $input['role_type'] = "Customer";
+        $input['role_type'] = "App\Http\Customer";
         
         $customer = Customer::create([]);
 
