@@ -42,6 +42,8 @@ class ServiceController extends BaseController
 
         $service = Service::create($input);
 
+        $service->domi;
+
         return $this->sendResponse($service, 'OK');
     }
 
