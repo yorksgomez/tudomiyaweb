@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'role_id'=>0
         ]);
 
-        $id = Domi::create();
+        $id = Domi::create()->id;
 
         User::create( [
             'name'=>'domi',
