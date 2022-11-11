@@ -22,7 +22,7 @@ Route::get('trabaja-con-nosotros', fn() => view('create-domi'))->name('create-do
 Route::get('hacer-pqr', fn() => view('create-pqr'))->name('create-pqr');
 
 Route::post('create-application', [ApplicationController::class, 'create'])->name('create-application');
-Route::post('hacer-pqr', [PqrController::class, 'create'])->name('create-pqr');
+Route::post('hacer-pqr', [PqrController::class, 'create'])->name('create-pqr-post');
 
 Route::middleware([
     'auth:sanctum',

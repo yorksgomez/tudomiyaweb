@@ -24,11 +24,13 @@ class UserController extends BaseController {
         $validator = Validator::make($input, [
             'name' => 'string',
             'lastname' => 'string',
-            'email' => 'email|unique:users',
+            'email' => 'prohibited',
             'nit' => 'string',
             'password' => 'prohibited',
             'c_password' => 'prohibited',
-            'phone' => 'string'
+            'phone' => 'string',
+            'role_type' => 'prohibited',
+            'role_id' => 'prohibited',
         ]);
         
         if($validator->fails())

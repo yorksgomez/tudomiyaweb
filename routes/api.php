@@ -1,10 +1,8 @@
 <?php
 
-use App\Http\Controllers\API\DeliveryController;
 use App\Http\Controllers\API\RatingController;
 use App\Http\Controllers\API\RegisterController;
 use App\Http\Controllers\API\ServiceController;
-use App\Http\Controllers\API\TravelController;
 use App\Http\Controllers\API\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,8 +27,8 @@ Route::middleware('auth:sanctum')->group(function() {
     Route::post('get-current-user', [UserController::class, 'getCurrentUser']);
     Route::post('update-current-user', [UserController::class, 'updateCurrentUser']);
 
-    Route::post('create-delivery', [DeliveryController::class, 'create']);
-    Route::post('create-travel', [TravelController::class, 'create']);
+    Route::post('create-service', [ServiceController::class, 'create']);
+    Route::post('cancel-service', [ServiceController::class, 'cancel']);
 
     Route::post('create-rating', [RatingController::class, 'create']);
 

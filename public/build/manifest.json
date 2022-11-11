@@ -7,10 +7,6 @@
     "file": "assets/foto-usuario.6e445a2a.png",
     "src": "resources/img/foto-usuario.png"
   },
-  "resources/img/icono-camara.png": {
-    "file": "assets/icono-camara.82cf43a3.png",
-    "src": "resources/img/icono-camara.png"
-  },
   "resources/img/icono-contraseña.png": {
     "file": "assets/icono-contraseña.3bc52695.png",
     "src": "resources/img/icono-contraseña.png"
@@ -19,21 +15,21 @@
     "file": "assets/icono-usuario.bfe8ae14.png",
     "src": "resources/img/icono-usuario.png"
   },
-  "resources/img/map.jpg": {
-    "file": "assets/map.b1062428.jpg",
-    "src": "resources/img/map.jpg"
-  },
   "resources/img/imagen-moto.png": {
     "file": "assets/imagen-moto.eb3094b5.png",
     "src": "resources/img/imagen-moto.png"
   },
-  "resources/img/menu.png": {
-    "file": "assets/menu.ef547b3e.png",
-    "src": "resources/img/menu.png"
-  },
   "resources/img/llamar.png": {
     "file": "assets/llamar.943f0ba7.png",
     "src": "resources/img/llamar.png"
+  },
+  "resources/img/map.jpg": {
+    "file": "assets/map.b1062428.jpg",
+    "src": "resources/img/map.jpg"
+  },
+  "resources/img/menu.png": {
+    "file": "assets/menu.ef547b3e.png",
+    "src": "resources/img/menu.png"
   },
   "resources/img/moto pantalla de carga.png": {
     "file": "assets/moto pantalla de carga.7b262f6c.png",
@@ -46,6 +42,10 @@
   "resources/img/oyasinfondo.png": {
     "file": "assets/oyasinfondo.73d02591.png",
     "src": "resources/img/oyasinfondo.png"
+  },
+  "resources/img/icono-camara.png": {
+    "file": "assets/icono-camara.82cf43a3.png",
+    "src": "resources/img/icono-camara.png"
   },
   "resources/img/esperandomoto.gif": {
     "file": "assets/esperandomoto.e53da0c7.gif",
@@ -71,10 +71,6 @@
     "file": "assets/fondoapp.25fee88f.png",
     "src": "resources/img/fondoapp.png"
   },
-  "resources/img/pidetudomi.png": {
-    "file": "assets/pidetudomi.dd9c3971.png",
-    "src": "resources/img/pidetudomi.png"
-  },
   "resources/img/pidetumoto.png": {
     "file": "assets/pidetumoto.4b0cc7e8.png",
     "src": "resources/img/pidetumoto.png"
@@ -82,6 +78,10 @@
   "resources/img/star.png": {
     "file": "assets/star.0fe80d5c.png",
     "src": "resources/img/star.png"
+  },
+  "resources/img/pidetudomi.png": {
+    "file": "assets/pidetudomi.dd9c3971.png",
+    "src": "resources/img/pidetudomi.png"
   },
   "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
     "file": "assets/fa-regular-400.fe69d948.woff2",
@@ -91,25 +91,25 @@
     "file": "assets/fa-brands-400.3fe890d0.woff2",
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
   },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
-    "file": "assets/fa-v4compatibility.7d1c2ce5.woff2",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
-  },
   "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
     "file": "assets/fa-solid-900.d27bc752.woff2",
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
+    "file": "assets/fa-v4compatibility.7d1c2ce5.woff2",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
   "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf": {
     "file": "assets/fa-regular-400.fdc1f753.ttf",
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf"
   },
-  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf": {
-    "file": "assets/fa-v4compatibility.4d73f280.ttf",
-    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf"
-  },
   "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf": {
     "file": "assets/fa-brands-400.c7ae37d3.ttf",
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf"
+  },
+  "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf": {
+    "file": "assets/fa-v4compatibility.4d73f280.ttf",
+    "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf"
   },
   "node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf": {
     "file": "assets/fa-solid-900.6d53c706.ttf",

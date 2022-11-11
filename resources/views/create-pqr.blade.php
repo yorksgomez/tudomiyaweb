@@ -2,7 +2,7 @@
     <main class="min-w-screen min-h-screen flex justify-center items-center flex-col bg-street">
         <section class="flex justify-center flex-col items-center rounded-md w-full">
             <x-jet-authentication-card-logo class="mb-8"></x-jet-authentication-card-logo>
-            <form action="{{ route('create-pqr') }}" enctype="multipart/form-data" class="flex-col flex justify-around bg-cover bg-white shadow-md rounded-md px-6 py-4 max-w-md w-full" method="POST">
+            <form action="{{ route('create-pqr-post') }}" enctype="multipart/form-data" class="flex-col flex justify-around bg-cover bg-white shadow-md rounded-md px-6 py-4 max-w-md w-full" method="POST">
                 @csrf
                 <div class="flex justify-center flex-col mb-6">
                     <x-title>¿Tienes alguna petición, queja o reclamo?</x-title>

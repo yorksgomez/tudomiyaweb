@@ -28,5 +28,18 @@ class DatabaseSeeder extends Seeder
             'role_id'=>0
         ]);
 
+        $id = Domi::create();
+
+        User::create( [
+            'name'=>'domi',
+            'lastname'=>'domi',
+            'email'=>'domi@gmail.com',
+            'phone'=>'30000000',
+            'nit'=>'0000000000',
+            'password'=> bcrypt('admdomiya2022*'),
+            'role_type'=>'App\\Models\\Domi',
+            'role_id'=>$id
+        ]);
+
     }
 }

@@ -19,4 +19,12 @@ class Service extends Model
         'service_id'
     ];
 
+    public function customer() {
+        return $this->hasOne(Customer::class);
+    }
+
+    public function domi() {
+        return $this->hasOne(Domi::class);
+    }
+
 }
