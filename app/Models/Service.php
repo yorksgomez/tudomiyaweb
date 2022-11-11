@@ -20,11 +20,11 @@ class Service extends Model
     ];
 
     public function customer() {
-        return $this->hasOne(Customer::class);
+        return $this->belongsTo(Customer::class);
     }
 
     public function domi() {
-        return $this->hasOne(Domi::class);
+        return $this->belongsTo(Domi::class);
     }
 
 }
