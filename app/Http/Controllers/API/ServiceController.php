@@ -41,8 +41,10 @@ class ServiceController extends BaseController
         $input['domi_id'] = 1;
 
         $service = Service::create($input);
+        $service->domi;
+        $service->customer;
 
-        return $this->sendResponse(new ServiceResource($service), 'OK');
+        return $this->sendResponse($service, 'OK');
     }
 
     public function cancel(Request $request) {
