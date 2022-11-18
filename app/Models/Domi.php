@@ -13,5 +13,4 @@ class Domi extends Model
         return $this->morphOne(User::class, "roleable", "role_type", "role_id");
     }
 
-
 }

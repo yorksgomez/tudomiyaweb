@@ -14,6 +14,9 @@ class ServiceResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return array_merge(
+            parent::toArray($request),
+            ["domi" => parent::toArray($request->domi)]
+        );
     }
 }
